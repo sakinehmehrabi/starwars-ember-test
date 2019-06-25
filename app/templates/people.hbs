@@ -1,0 +1,13 @@
+<h2>
+    People
+</h2>
+<GameCards
+  @collection ={{peopleCollection}}
+  @comparissonAttr='mass'
+/>
+
+<div class="row mt-4">
+  <div class="col d-flex justify-content-center">
+    <button type="button" name="button" class="btn btn-primary" onclick={{action "shuffle"}}>Shuffle</button>
+  </div>
+</div>
