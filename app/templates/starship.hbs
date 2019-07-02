@@ -1,37 +1,7 @@
-<h2>starship</h2>
-
-<!-- <ul>
-  {{#each model as |starship|}}
-    <li>
-      {{starship.name}}/{{starship.crew}}
-    </li>
-  {{/each}}
-</ul> -->
-<!-- <div class="row">
-  <div class="col">
-    <div class="card">
-      <div class="card-body">
-        <h5 class="card-title">{{starship1.name}}</h5>
-        <p class="card-text">crew : {{starship1.crew}}</p>
-      </div>
-    </div>
-  </div>
-  <div class="col">
-    <div class="card">
-      <div class="card-body">
-        <h5 class="card-title">{{starship2.name}}</h5>
-        <p class="card-text">crew : {{starship2.crew}}</p>
-      </div>
-    </div>
-  </div>
-</div> -->
 
 <GameCards
-  @collection ={{starshipCollection}}
+  @collection ={{collection}}
   @comparissonAttr='crew'
+  @shuffleAction={{action "shuffle"}}
+  @title='starship'
 />
-<div class="row mt-4">
-  <div class="col d-flex justify-content-center">
-    <button type="button" name="button" class="btn btn-primary" onclick={{action "shuffle"}}>Shuffle</button>
-  </div>
-</div>
